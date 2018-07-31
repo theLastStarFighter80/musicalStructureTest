@@ -1,7 +1,10 @@
 package com.example.android.musicalStructure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,5 +33,95 @@ public class NowPlayingActivity extends AppCompatActivity {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView_0.setAdapter(adapter);
 
+        ImageButton bluesy = (ImageButton) findViewById(R.id.bluesButton);
+        bluesy.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myBluesIntent = new Intent(NowPlayingActivity.this, BluesActivity.class);
+
+                // Start the new activity
+                startActivity(myBluesIntent);
+            }
+        });
+
+        ImageButton classy = (ImageButton) findViewById(R.id.classicalButton);
+        classy.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myClassicalIntent = new Intent(NowPlayingActivity.this, ClassicalActivity.class);
+
+                // Start the new activity
+                startActivity(myClassicalIntent);
+            }
+        });
+
+        ImageButton dancer = (ImageButton) findViewById(R.id.danceButton);
+        dancer.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myDanceIntent = new Intent(NowPlayingActivity.this, DanceActivity.class);
+
+                // Start the new activity
+                startActivity(myDanceIntent);
+            }
+        });
+
+        ImageButton hipHopper = (ImageButton) findViewById(R.id.hipHopButton);
+        hipHopper.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myHipHopIntent = new Intent(NowPlayingActivity.this, HipHopActivity.class);
+
+                // Start the new activity
+                startActivity(myHipHopIntent);
+            }
+        });
+
+        ImageButton nowed = (ImageButton) findViewById(R.id.nowPlayingButton);
+        nowed.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myNowPlayingIntent = new Intent(NowPlayingActivity.this, NowPlayingActivity.class);
+
+                // Start the new activity
+                startActivity(myNowPlayingIntent);
+            }
+        });
+
+        ImageButton rapper = (ImageButton) findViewById(R.id.rapButton);
+        rapper.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myRapIntent = new Intent(NowPlayingActivity.this, RapActivity.class);
+
+                // Start the new activity
+                startActivity(myRapIntent);
+            }
+        });
+
+        ImageButton rocking = (ImageButton) findViewById(R.id.rockButton);
+        rocking.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the classical category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent myRockIntent = new Intent(NowPlayingActivity.this, RockActivity.class);
+
+                // Start the new activity
+                startActivity(myRockIntent);
+            }
+        });
     }
 }

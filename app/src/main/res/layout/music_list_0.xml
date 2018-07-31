@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/list_0"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="32dp" />
+    android:layout_height="match_parent">
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_0"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/bluesButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/blues"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/classicalButton" />
+
+    <ImageButton
+        android:id="@+id/classicalButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/classical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bluesButton"
+        app:layout_constraintEnd_toStartOf="@id/danceButton" />
+
+    <ImageButton
+        android:id="@+id/danceButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/dance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/classicalButton"
+        app:layout_constraintEnd_toStartOf="@id/hipHopButton" />
+
+    <ImageButton
+        android:id="@+id/hipHopButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/hiphop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/danceButton"
+        app:layout_constraintEnd_toStartOf="@id/nowPlayingButton" />
+
+    <ImageButton
+        android:id="@+id/nowPlayingButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hipHopButton"
+        app:layout_constraintEnd_toStartOf="@id/rapButton" />
+
+    <ImageButton
+        android:id="@+id/rapButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/rap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nowPlayingButton"
+        app:layout_constraintEnd_toStartOf="@id/rockButton" />
+
+    <ImageButton
+        android:id="@+id/rockButton"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/rock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rapButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
