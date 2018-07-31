@@ -24,6 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/classicalButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-b/#calligraphyalphabet-b-cursive-->
 
     <ImageButton
         android:id="@+id/classicalButton"
@@ -34,6 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/bluesButton"
         app:layout_constraintEnd_toStartOf="@id/danceButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-c/#calligraphyalphabet-c-cursive-->
 
     <ImageButton
         android:id="@+id/danceButton"
@@ -44,6 +46,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/classicalButton"
         app:layout_constraintEnd_toStartOf="@id/hipHopButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-d/#calligraphyalphabet-d-cursive-->
 
     <ImageButton
         android:id="@+id/hipHopButton"
@@ -54,6 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/danceButton"
         app:layout_constraintEnd_toStartOf="@id/nowPlayingButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-h/#calligraphyalphabet-h-cursive-->
 
     <ImageButton
         android:id="@+id/nowPlayingButton"
@@ -64,6 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/hipHopButton"
         app:layout_constraintEnd_toStartOf="@id/rapButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-n/#calligraphyalphabet-n-cursive-->
 
     <ImageButton
         android:id="@+id/rapButton"
@@ -74,6 +79,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/nowPlayingButton"
         app:layout_constraintEnd_toStartOf="@id/rockButton" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-r/#calligraphyalphabet-r-cursive-->
 
     <ImageButton
         android:id="@+id/rockButton"
@@ -84,4 +90,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/rapButton"
         app:layout_constraintEnd_toEndOf="parent" />
+    <!--http://calligraphyalphabet.org/calligraphy-alphabet-r/#calligraphyalphabet-r-cursive-->
+
 </android.support.constraint.ConstraintLayout>
